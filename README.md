@@ -3,10 +3,10 @@
 ## Resumen
 Este documento contiene el extenso técnico correspondiente al desarrollo la aplicación el "Juego de la Vida",
 el cuál está basado en el modelo propuesto por John Conway.
-La aplicación fue estructurada usando el lenguaje de programación Python, usando las librerías de NumPy la cual
-es la adecuada para la vectorización de matrices numéricas. así como Streamlit para el despliegue en tiempo real de una interfaz web interactiva.
-    <img width="329" height="185" alt="image" src="https://github.com/user-attachments/assets/dfa8f565-c3c3-4de1-baa3-246357b7b752" />
-    <img width="329" height="185" alt="image" src="https://github.com/user-attachments/assets/416eadb9-92c1-4cab-ae9f-ea2aff23aa2f" />
+La aplicación fue estructurada usando el lenguaje de programación Python, usando las librerías de NumPy la cual ess la adecuada para la vectorización de matrices numéricas. así como Streamlit para el despliegue en tiempo real de una interfaz web interactiva.
+
+.    <img width="389" height="225" alt="image" src="https://github.com/user-attachments/assets/dfa8f565-c3c3-4de1-baa3-246357b7b752" />
+.   <img width="389" height="225" alt="image" src="https://github.com/user-attachments/assets/416eadb9-92c1-4cab-ae9f-ea2aff23aa2f" />
 
 ## Introducción: Problema 
 ### ¿Que necesidad aborda este proyecto?
@@ -78,11 +78,13 @@ velocidad = st.sidebar.slider("Velocidad", min_value=0.05, max_value=1.0, value=
 <img width="289" height="321" alt="Captura de pantalla 2026-11-08 211824" src="https://github.com/user-attachments/assets/a98bbf9e-f733-4644-a720-feaba67fab05" />
 
 ### Funcionamiento de la Interfaz
-#### Estado por Default
+### Estado por Default
 <img width="917" height="627" alt="Captura de pantalla 2026-11-08 212019" src="https://github.com/user-attachments/assets/27be73f5-eea9-4442-9022-e3714dc97be8" />
-#### Ajuste de Parámetros
+
+### Ajuste de Parámetros
 <img width="917" height="627" alt="Captura de pantalla 2026-11-08 212019" src="https://github.com/user-attachments/assets/f34b15af-7695-4d33-8857-f26fce185a4d" />
-#### Ejecución
+
+### Ejecución
 <img width="917" height="627" alt="Captura de pantalla 2026-11-08 212019" src="https://github.com/user-attachments/assets/bcf39fe8-965e-4559-9162-985cf539971c" />
 
 ## Conclusiones
@@ -92,22 +94,29 @@ Se logro la creación de una aplicación simulando el juego de la vida que nos p
 ## Reproducibilidad
 Para clonar, instalar y ejecutar este proyecto en cualquier equipo local, sigue las instrucciones detalladas a continuación:
 ### Requisitos del sistema
-**Python** versión 3.8 o superior.
+**Python** versión 3.8 o superior (En caso de no tener python verifica en tu sistema la version e instalala).
 **Gestor de paquetes:** `pip`actualizado.
 **Control de versiones:** `git` instalado en la terminal
 
 ### Pasos de Instalación y Ejecución
-Abre la terminal o consola de comandos y clona el proyecto desde GitHub hacia tu equipo local:
+Abre la terminal o consola de comandos de tu sistema y clona el proyecto desde GitHub hacia tu equipo local:
 ```bash
    git clone https://github.com/andreazamoralopez28-hub/Proyecto-Segundo-Parcial.git
    cd <Nombre de la carpeta>
 ```
 #### Instalar Dependencias
 Dentro de la carpeta que se creo, abre la terminal del comando y ejecuta:
+
+Windows.
 ```bash
 pip install -r requirements.txt
 ```
-### Ejecución
+MacOs.
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+### Ejecución VS CODE
 Abre VS Code, da clic en open folder 
 <img width="363" height="201" alt="Captura de pantalla 2026-11-08 213815" src="https://github.com/user-attachments/assets/1a20b98a-f518-4f15-a3c9-e198efc17df9" />
 
@@ -121,9 +130,15 @@ abre la terminal dentro de VS code (puedes usar ctrl + ñ), y ejecuta el siguien
 ```bash
  streamlit run app.py
 ```
-O puedes ejecutarlo en la terminal de tu equipo ubicando la ruta.
+### Ejecución en terminal del sistema
+
+Puedes ejecutarlo en la terminal de **Windows** de tu equipo ubicando la ruta de la carpeta en donde se encuentra el proyecto.
 ```bash
-C:\Users\"tu usuario"\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3."x(pon tu version de python)"_qbz5n2kfra8p0\python.exe -m streamlit run app.py
+python -m streamlit run app.py
+```
+Comando para **MacOs**.
+```bash
+python3 -m streamlit run app.py
 ```
 
 Da clic en enter y se desplegara la interfaz web con el programa listo para usar.
@@ -139,7 +154,7 @@ Da clic en Reiniciar Tablero para restaurar la cuadricula.
 <img width="809" height="603" alt="Captura de pantalla 2026-11-08 214932" src="https://github.com/user-attachments/assets/d39710e5-a2de-4e19-b461-e3f1bf9dead5" />
 
 ## Listo!
-## Disfruta de la simulación del Juegos de la Vida :)
+### Disfruta de la simulación del Juegos de la Vida :)
 
 ## Licencia
 

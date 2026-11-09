@@ -39,7 +39,7 @@ while st.session_state.corriendo:
     placeholder.table(st.session_state.tablero)
     time.sleep(0.3)
 
-placeholder.table(st.session_state.tablero * 255, width=500, clamp=True)
+placeholder.image(st.session_state.tablero * 255, width=500, clamp=True)
 
 if st.session_state.corriendo:
     st.session_state.tablero = calcularGeneracion(st.session_state.tablero)

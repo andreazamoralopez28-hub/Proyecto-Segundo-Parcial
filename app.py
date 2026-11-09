@@ -16,6 +16,8 @@ if "tablero" not in st.session_state or st.session_state.tablero.shape != (filas
 
 if "corriendo" not in st.session_state:
     st.session_state.corriendo = False
+if "generacion" not in st.session_state:
+    st.session_state.generacion = 0
 
 st.sidebar.markdown("---")
 st.sidebar.subheader("Controles")

@@ -123,6 +123,19 @@ abre la terminal dentro de VS code (puedes usar ctrl + ñ), y ejecuta el siguien
 ```
 Da clic en enter y se desplegara la interfaz web con el programa listo para usar.
 
+### Como usar
+Da clic en iniciar despues de haber ajustado los parámetros a tu conveniencia.
+<img width="809" height="603" alt="Captura de pantalla 2026-11-08 214932" src="https://github.com/user-attachments/assets/ea4ec21d-145e-42de-ac64-2d57b10b08a4" />
+
+Da clic en detener para pausar la simulación.
+<img width="809" height="603" alt="Captura de pantalla 2026-11-08 214932" src="https://github.com/user-attachments/assets/e02edb8d-fe82-42f2-a5b0-be2bb66a4c89" />
+
+Da clic en Reiniciar Tablero para restaurar la cuadricula.
+<img width="809" height="603" alt="Captura de pantalla 2026-11-08 214932" src="https://github.com/user-attachments/assets/d39710e5-a2de-4e19-b461-e3f1bf9dead5" />
+
+## Listo!
+## Disfruta de la simulación del Juegos de la Vida :)
+
 
 
 

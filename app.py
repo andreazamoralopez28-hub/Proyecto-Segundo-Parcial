@@ -13,6 +13,7 @@ velocidad = st.sidebar.slider("Velocidad", min_value=0.05, max_value=1.0, value=
 
 if "tablero" not in st.session_state or st.session_state.tablero.shape != (filas, columnas):
     st.session_state.tablero = np.random.choice([0, 1], size=(filas, columnas), p=[0.8, 0.2])
+    st.session_state.generacion = 0
 
 if "corriendo" not in st.session_state:
     st.session_state.corriendo = False
@@ -27,6 +28,7 @@ if st.sidebar.button("Detener"):
     st.session_state.corriendo = False
 if st.sidebar.button("Reiniciar Tablero"):
     st.session_state.tablero = np.random.choice([0, 1], size=(filas, columnas), p=[0.8, 0.2])
+    st.session_state.generacion = 0
     st.session_state.corriendo = False
 
 def calcularGeneracion(tablero):
@@ -47,7 +49,7 @@ st.write(f"Generacion: {st.session_state.generacion}")
 
 placeholder = st.empty()
 
-escala = 20  # Línea 49
+escala = 20
 tablero_ampliado = np.repeat(np.repeat(st.session_state.tablero, escala, axis=0), escala, axis=1) * 255
 placeholder.image(tablero_ampliado, width=400, clamp=True)
 

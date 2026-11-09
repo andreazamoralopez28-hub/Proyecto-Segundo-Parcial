@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 st.set_page_config(page_title="Juego de la Vida", layout="wide")
-st.title("Juego de la Vida (Conway)")
+st.title("Juego de la Vida")
 
 st.sidebar.title("Configuración")
 
@@ -43,11 +43,16 @@ def calcularGeneracion(tablero):
                 nuevas_celdas[i, j] = tablero[i, j]
     return nuevas_celdas
 
+st.write(f"Generacion: {st.session_state.generacion}")
+
 placeholder = st.empty()
 
-placeholder.image(st.session_state.tablero * 255, width=500, clamp=True)
+escala = 20  # Línea 49
+tablero_ampliado = np.repeat(np.repeat(st.session_state.tablero, escala, axis=0), escala, axis=1) * 255
+placeholder.image(tablero_ampliado, width=400, clamp=True)
 
 if st.session_state.corriendo:
     st.session_state.tablero = calcularGeneracion(st.session_state.tablero)
+    st.session_state.generacion += 1
     time.sleep(velocidad)
     st.rerun()

@@ -136,6 +136,9 @@ Da clic en Reiniciar Tablero para restaurar la cuadricula.
 ## Listo!
 ## Disfruta de la simulación del Juegos de la Vida :)
 
+## Licencia
+
+Eres libre de utilizar, modificar, copiar y distribuir este código con fines académicos o personales, siempre y cuando se reconozca la autoría original del proyecto.
 
 
 

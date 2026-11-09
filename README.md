@@ -121,6 +121,11 @@ abre la terminal dentro de VS code (puedes usar ctrl + ñ), y ejecuta el siguien
 ```bash
  streamlit run app.py
 ```
+O puedes ejecutarlo en la terminal de tu equipo ubicando la ruta.
+```bash
+C:\Users\"tu usuario"\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3."x(pon tu version de python)"_qbz5n2kfra8p0\python.exe -m streamlit run app.py
+```
+
 Da clic en enter y se desplegara la interfaz web con el programa listo para usar.
 
 ### Como usar
